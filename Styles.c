@@ -8,22 +8,7 @@ void main()
   outtext("Dimensions of display : ");
   gotoxy(25,1);
   printf("%d x %d",getmaxx(),getmaxy());
-  outtextxy(1,35,"Designs made by setfillstyle(), setcolor(), floodfill() and ...");
-  outtextxy(1,70,"i) circle() :-");
-  for(i=0;i<13;i++)
-  { setfillstyle(13-i,i);
-    setcolor(i);
-    circle(i*50,120,30);
-    floodfill(i*50,120,i);
-    delay(250);
-  }
-  setcolor(15);
-  outtextxy(1,180,"ii) fillellipse() :-");
-  for(i=0;i<13;i++)
-  { setfillstyle(i,15-i);
-    setcolor(i);
-    fillellipse(i*50,230,35,25+i*2);
-    delay(200);
+  
   }
   setcolor(15);
   outtextxy(1,280,"iii) fillpoly :-");
